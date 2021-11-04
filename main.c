@@ -10,7 +10,7 @@ int main(){
         max = num1;
         min = num2;
     }
-    
+        
     printf("The Armstrong numbers are:");
     for(int i = min; i<=max; i++){
         if(isArmstrong(i)){ printf(" %d", i); }
@@ -25,7 +25,7 @@ int main(){
     }
     printf("\nThe Strong numbers are:");
     for(int i = min; i<=max; i++){
-        if(isStrong(i)){ printf(" %d", i); }rr
+        if(isStrong(i)){ printf(" %d", i); }
     }
     printf("\n");
 }
