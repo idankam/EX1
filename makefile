@@ -20,14 +20,14 @@ recursives:libclassrec.a
 loopd:libclassloops.so
 recursived:libclassrec.so
 
-mains: $(OBJECTS_MAIN) recursives
+mains: $(OBJECTS_MAIN) libclassrec.a
 	$(CC) $(FLAGS) $(OBJECTS_MAIN) ./libclassrec.a -o mains
 
-maindloop: $(OBJECTS_MAIN) loopd
+maindloop: $(OBJECTS_MAIN) libclassloops.so
 	$(CC) $(FLAGS) $(OBJECTS_MAIN) ./libclassloops.so -o maindloop
 
-maindrec: $(OBJECTS_MAIN) recursived
-	$(CC) $(FLAGS) $(OBJECTS_MAIN) ./libclassrec.so -o maindrec
+maindrec: $(OBJECTS_MAIN) libclassloops.so
+	$(CC) $(FLAGS) $(OBJECTS_MAIN) ./c -o maindrec
 
 libclassloops.a: $(OBJECTS_LOOP) $(OBJECTS_BASE) $(OBJECTS_BASIC)
 	$(AR) -rcs libclassloops.a $(OBJECTS_LOOP) $(OBJECTS_BASE) $(OBJECTS_BASIC)
