@@ -3,7 +3,8 @@
 
 int main(){
     int num1, num2;
-    scanf("%d %d", &num1, &num2);
+    scanf("%d", &num1);
+    scanf("%d", &num2);
     int max = num2, min = num1;
     if (num1>num2)
     {
