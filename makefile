@@ -53,7 +53,7 @@ $(OBJECTS_MAIN): main.c $(NUM_H)
 
 
 
-.PHONY: clean loops recursives recursived loopd mains maindloop maindrec all
+.PHONY: clean loops recursives recursived loopd all
 
 clean:
 	rm -f *.o *.a *.so mains maindrec maindloop	
