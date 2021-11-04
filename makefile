@@ -27,7 +27,7 @@ maindloop: $(OBJECTS_MAIN) libclassloops.so
 	$(CC) $(FLAGS) $(OBJECTS_MAIN) ./libclassloops.so -o maindloop
 
 maindrec: $(OBJECTS_MAIN) libclassloops.so
-	$(CC) $(FLAGS) $(OBJECTS_MAIN) ./c -o maindrec
+	$(CC) $(FLAGS) $(OBJECTS_MAIN) ./libclassloops.so -o maindrec
 
 libclassloops.a: $(OBJECTS_LOOP) $(OBJECTS_BASE) $(OBJECTS_BASIC)
 	$(AR) -rcs libclassloops.a $(OBJECTS_LOOP) $(OBJECTS_BASE) $(OBJECTS_BASIC)
