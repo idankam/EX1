@@ -1,6 +1,6 @@
 CC=gcc
 OBJECTS_MAIN=main.o
-OBJECTS_ALL=loops recursives recursived loopd mains maindloop maindrec
+OBJECTS_ALL=libclassloops.a libclassrec.a libclassloops.so libclassrec.so mains maindloop maindrec
 OBJECTS_REC=advancedClassificationRecursion.o
 OBJECTS_LOOP=advancedClassificationLoop.o
 OBJECTS_BASE=basicClassification.o
